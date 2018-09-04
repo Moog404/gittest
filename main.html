@@ -1,5 +1,27 @@
-bonjour bonjour
+Bonjour
 
 je m'appelle Kwevan
 
-caca
+
+
+
+
+
+3.2.1. SE REMETTRE SUR MASTER
+$ git checkout master
+$ git pull origin master
+3.2.2. CRÉER UNE BRANCHE ET SE PLACER DESSUS
+$ git branch nom_de_ta_feature
+$ git checkout nom_de_ta_feature
+À partir de là, tu peux travailler sur ta branche OKLM, repasser d’une branche à l’autre avec git checkout, tout en n’oubliant pas de faire des commits.
+$ git add .
+$ git commit -m “branche terminée, il faut fusionner”
+
+3.2.3. FUSIONNER SA BRANCHE
+$ git checkout master
+$ git pull origin master
+$ git checkout nom_de_ta_feature
+$ git merge master
+$ git checkout master
+$ git merge nom_de_ta_feature
+$ git push origin master
